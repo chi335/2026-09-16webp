@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹브라우저 소개</title>
+    <style>
+        /* 2x2 레이아웃 테이블 스타일 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        td {
+            border: 1px solid #ccc;
+            width: 50%;
+            padding: 15px;
+            vertical-align: top;
+            box-sizing: border-box;
+        }
+        
+        /* figure 스타일 */
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        figcaption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #555;
+            font-weight: bold;
+        }
+
+        /* 인라인 코드 스타일 (문장 내부) */
+        code {
+            background-color: #f4f4f4;
+            color: #d63384;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+
+        /* 세로 코드 상자 스타일 (그림 1-3 대용) */
+        .code-box {
+            background-color: #1e1e1e; /* VS Code 어두운 테마 느낌 */
+            color: #d4d4d4;
+            text-align: left;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: Consolas, 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.5;
+            overflow-x: auto;
+            margin: 0;
+        }
+        .code-box code {
+            background-color: transparent;
+            color: inherit;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>웹브라우저 소개</h1>
+
+    <!-- 2x2 테이블 구조 -->
+    <table>
+        <!-- 1번째 행 (Row 1) -->
+        <tr>
+            <!-- 1행 1열: 웹브라우저 설명 -->
+            <td>
+                <p>
+                    브라우저라고 불리기도 하는 웹브라우저는, 사용자에게 웹서버 컴퓨터에 접속하고 웹페이지, 이미지, 동영상, 음악 등 다양한 데이터를 다운받아 보여주는 소프트웨어이다. 그림 1-2는 대표적인 크롬 웹브라우저를 보여준다.
+                </p>
+            </td>
+            <!-- 1행 2열: 그림 1-2 이미지 -->
+            <td>
+                <figure>
+                    <img src="chrome_browser.png" alt="대표적인 크롬 웹브라우저">
+                    <figcaption>그림1-2 크롬 웹브라우저</figcaption>
+                </figure>
+            </td>
+        </tr>
+
+        <!-- 2번째 행 (Row 2) -->
+        <tr>
+            <!-- 2행 1열: 설명글 및 code 작성 방법 안내 -->
+            <td>
+                <p>
+                    웹페이지는 브라우저에 HTML5 문서임을 알리기 위해 그림 1-3과 같은 코드를 첫 라인에 삽입하여야 한다.
+                </p>
+             
+                
+            </td>
+            
+            <!-- 2행 2열: 이미지가 아닌 세로 코드문 형태 (그림1-3 Html5 문서구성) -->
+            <td>
+                <figure>
+                    <!-- 세로로 정렬된 실제 HTML5 코드 블록 -->
+                    <pre class="code-box"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;문서 제목&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 웹페이지 내용 --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    <figcaption>그림1-3 Html5 문서구성</figcaption>
+                </figure>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

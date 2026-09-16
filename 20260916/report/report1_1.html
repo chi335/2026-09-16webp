@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트폰 사용 만족도 설문조사</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.6; margin: 20px; color: #333; }
+        header, section, footer { margin-bottom: 30px; }
+        article { background-color: #f9f9f9; padding: 25px; border-radius: 8px; border: 1px solid #eee; }
+        nav a { text-decoration: none; color: #0066cc; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        
+        /* 폼 스타일 지정 */
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: bold; margin-bottom: 8px; }
+        .inline-label { font-weight: normal; margin-right: 15px; cursor: pointer; }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%; max-width: 500px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+        }
+        textarea { height: 100px; resize: vertical; }
+        .submit-btn {
+            background-color: #28a745; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold;
+        }
+        .submit-btn:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+    <!-- 헤더 영역 -->
+    <header>
+        <h1>스마트폰 사용 만족도 설문조사</h1>
+        <p>본 설문조사는 사용자의 스마트폰 이용 현황 및 만족도를 파악하기 위해 작성되었습니다.</p>
+    </header>
+
+    <!-- 네비게이션 (메인 페이지 report1.html 돌아가기) -->
+    <nav>
+        <p><a href="report1.html">← 메인 페이지(스마트폰의 모든 것)로 돌아가기</a></p>
+    </nav>
+
+    <!-- 설문조사 본문 영역 -->
+    <main>
+        <section>
+            <article>
+                <h2>설문 항목 작성</h2>
+                <form action="#" method="post">
+                    
+                    <!-- 1. 기본 정보 -->
+                    <div class="form-group">
+                        <label for="username">1. 성함</label>
+                        <input type="text" id="username" name="username" placeholder="이름을 입력하세요" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">2. 이메일 주소</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+
+                    <!-- 2. 라디오 버튼 (단일 선택) -->
+                    <div class="form-group">
+                        <label>3. 현재 사용 중인 스마트폰 운영체제(OS)</label>
+                        <label class="inline-label"><input type="radio" name="os" value="android" required> Android (삼성, 샤오미 등)</label>
+                        <label class="inline-label"><input type="radio" name="os" value="ios"> iOS (아이폰)</label>
+                        <label class="inline-label"><input type="radio" name="os" value="other"> 기타</label>
+                    </div>
+
+                    <!-- 3. 체크박스 (복수 선택) -->
+                    <div class="form-group">
+                        <label>4. 스마트폰으로 가장 자주 하는 활동 (복수 선택 가능)</label>
+                        <label class="inline-label"><input type="checkbox" name="usage" value="sns"> SNS 및 메신저</label>
+                        <label class="inline-label"><input type="checkbox" name="usage" value="media"> 동영상 시청 (유튜브, OTT)</label>
+                        <label class="inline-label"><input type="checkbox" name="usage" value="game"> 모바일 게임</label>
+                        <label class="inline-label"><input type="checkbox" name="usage" value="work"> 업무 및 학습</label>
+                        <label class="inline-label"><input type="checkbox" name="usage" value="camera"> 사진/동영상 촬영</label>
+                    </div>
+
+                    <!-- 4. 드롭다운 선택 (Select) -->
+                    <div class="form-group">
+                        <label for="satisfaction">5. 현재 스마트폰에 대한 전반적인 만족도</label>
+                        <select id="satisfaction" name="satisfaction" required>
+                            <option value="">선택해 주세요</option>
+                            <option value="5">매우 만족</option>
+                            <option value="4">만족</option>
+                            <option value="3">보통</option>
+                            <option value="2">불만족</option>
+                            <option value="1">매우 불만족</option>
+                        </select>
+                    </div>
+
+                    <!-- 5. 텍스트 에어리어 (의견 작성) -->
+                    <div class="form-group">
+                        <label for="opinion">6. 차기 스마트폰 구매 시 가장 중요하게 생각하는 기능이나 의견</label>
+                        <textarea id="opinion" name="opinion" placeholder="의견을 자유롭게 남겨주세요."></textarea>
+                    </div>
+
+                    <!-- 제출 버튼 -->
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">설문조사 제출하기</button>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 스마트폰 정보 페이지. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

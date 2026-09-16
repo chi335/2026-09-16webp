@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>웹프로그래밍 개요</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 30px;
+            line-height: 1.6;
+        }
+
+        /* details 상자 스타일 */
+        details {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background-color: #fafafa;
+            transition: background-color 0.2s ease;
+        }
+
+        /* 마우스 올렸을 때 배경색 변경 */
+        details:hover {
+            background-color: #f0f4f8;
+        }
+
+        /* summary (클릭하는 제목) 스타일 */
+        summary {
+            font-weight: bold;
+            font-size: 1.05rem;
+            color: #333;
+            cursor: pointer;
+            outline: none;
+        }
+
+        /* 펼쳐졌을 때 나올 내용 스타일 */
+        .content {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>웹프로그래밍 개요</h2>
+    <hr>
+
+    <!-- 1. 웹의 기본 목적 -->
+    <details>
+        <summary>웹의 기본 목적</summary>
+        <div class="content">
+            <p>전 세계의 컴퓨터를 연결하여 <strong>정보를 손쉽게 공유하고 문서(콘텐츠)를 주고받기 위한</strong> 목적입니다.</p>
+        </div>
+    </details>
+
+    <!-- 2. 왜 web인가? -->
+    <details>
+        <summary>왜 web인가?</summary>
+        <div class="content">
+            <p>운영체제(Windows, Mac 등)나 기기의 종류에 상관없이 <strong>웹 브라우저만 있으면 언제 어디서나 접근</strong>할 수 있고, 별도의 프로그램 설치 없이 이용할 수 있기 때문입니다.</p>
+        </div>
+    </details>
+
+    <!-- 3. 웹페이지를 구성하는 3요소 -->
+    <details>
+        <summary>웹페이지를 구성하는 3요소</summary>
+        <div class="content">
+            <ul>
+                <li><strong>HTML (HyperText Markup Language):</strong> 웹페이지의 <strong>구조(뼈대)</strong> 구성</li>
+                <li><strong>CSS (Cascading Style Sheets):</strong> 웹페이지의 <strong>디자인(시각적 표현)</strong> 담당</li>
+                <li><strong>JavaScript:</strong> 웹페이지의 <strong>동적 기능(상호작용)</strong> 구현</li>
+            </ul>
+        </div>
+    </details>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스마트폰의 모든 것</title>
+    <style>
+        body { font-family: 'Malgun Gothic', sans-serif; line-height: 1.6; margin: 20px; color: #333; }
+        header, section, footer { margin-bottom: 40px; }
+        article { background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin-top: 15px; border: 1px solid #eee; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; background-color: #fff; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+        th { background-color: #f4f4f4; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav li { display: inline; margin-right: 15px; }
+        nav a { text-decoration: none; color: #0066cc; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .image-container { text-align: center; margin: 20px 0; }
+        img { max-width: 100%; height: auto; border-radius: 8px; }
+        .btn-survey { display: inline-block; padding: 12px 24px; background-color: #0066cc; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .btn-survey:hover { background-color: #004b99; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <!-- 웹페이지 상단 헤더 -->
+    <header>
+        <h1>스마트폰의 모든 것</h1>
+        <p>안녕하세요! 본 웹페이지는 현대인의 필수품인 스마트폰의 역사, 주요 기능, 그리고 최신 스펙 비교를 통해 스마트폰에 대한 유용한 정보를 제공합니다.</p>
+    </header>
+
+    <!-- 목차 영역 -->
+    <nav>
+        <h2>목차</h2>
+        <ul>
+            <li><a href="#intro-audio">1. 소개 오디오</a></li>
+            <li><a href="#features">2. 주요 기능 및 이미지</a></li>
+            <li><a href="#spec-table">3. 대표 스펙 비교 표</a></li>
+            <li><a href="#external-link">4. 관련 정보 (외부 링크)</a></li>
+            <li><a href="#survey-section">5. 만족도 설문조사</a></li>
+        </ul>
+    </nav>
+
+    <!-- 본문 영역 -->
+    <main>
+        <!-- 1. 오디오 섹션 -->
+        <section id="intro-audio">
+            <h2>1. 소개 오디오</h2>
+            <article>
+                <h3>스마트폰 소개 음성</h3>
+                <p>아래 재생 버튼을 눌러 스마트폰 소개 음성을 들어보세요.</p>
+                <audio controls>
+                    <source src="smartphone_intro.mp3" type="audio/mpeg">
+                    귀하의 브라우저는 audio 요소를 지원하지 않습니다.
+                </audio>
+            </article>
+        </section>
+
+        <!-- 2. 기능 및 이미지 섹션 -->
+        <section id="features">
+            <h2>2. 주요 기능 및 특징</h2>
+            <article>
+                <h3>스마트폰이 제공하는 핵심 기능</h3>
+                <div class="image-container">
+                    <img src="images/smartphone.jpg" alt="스마트폰 이미지">
+                </div>
+                <p>오늘날의 스마트폰은 단순한 통화 기기를 넘어 다양한 역할을 수행합니다.</p>
+                <ul>
+                    <li>고화질 카메라를 통한 사진 및 동영상 촬영</li>
+                    <li>모바일 인터넷 및 SNS를 통한 실시간 소통</li>
+                    <li>다양한 앱(App)을 활용한 금융, 업무, 여가 생활</li>
+                    <li>GPS 기반 내비게이션 및 위치 서비스</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- 3. 스펙 비교 섹션 -->
+        <section id="spec-table">
+            <h2>3. 대표 스펙 비교 표</h2>
+            <article>
+                <h3>플래그십 vs 가성비 모델 스펙</h3>
+                <table>
+                    <caption>스마트폰 기본 스펙 비교</caption>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>A 모델 (플래그십)</th>
+                            <th>B 모델 (가성비)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>화면 크기</td>
+                            <td>6.8인치 AMOLED</td>
+                            <td>6.1인치 LCD</td>
+                        </tr>
+                        <tr>
+                            <td>RAM / 저장공간</td>
+                            <td>12GB / 512GB</td>
+                            <td>6GB / 128GB</td>
+                        </tr>
+                        <tr>
+                            <td>배터리 용량</td>
+                            <td>5,000 mAh</td>
+                            <td>4,000 mAh</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <!-- 4. 외부 링크 섹션 -->
+        <section id="external-link">
+            <h2>4. 관련 정보</h2>
+            <article>
+                <h3>최신 기술 동향 및 뉴스</h3>
+                <p>스마트폰에 대한 더 자세한 최신 기술 동향이나 뉴스를 확인하시려면 아래 링크를 클릭해 주세요.</p>
+                <p><a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">위키백과 스마트폰 관련 정보 보기 (새 창)</a></p>
+            </article>
+        </section>
+
+        <!-- 5. 설문조사 페이지 연결 섹션 (report1_1.html 링크) -->
+        <section id="survey-section">
+            <h2>5. 스마트폰 사용 만족도 설문조사</h2>
+            <article>
+                <h3>여러분들의 의견을 들려주세요!</h3>
+                <p>더 나은 정보 제공을 위해 스마트폰 사용 습관 및 만족도 설문조사를 실시하고 있습니다. 잠시 시간을 내어 참여해 주시면 감사하겠습니다.</p>
+                <p><a href="report1_1.html" class="btn-survey">설문조사 참여하기 ➔</a></p>
+            </article>
+        </section>
+    </main>
+
+    <!-- 푸터 영역 -->
+    <footer>
+        <hr>
+        <p>&copy; 2026 스마트폰 정보 페이지. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

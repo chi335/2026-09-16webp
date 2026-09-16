@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9개의 버튼 웹페이지</title>
+    <style>
+        /* 화면 중앙 정렬 및 기본 스타일 */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f6f8;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* 3x3 버튼 그리드 레이아웃 */
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3개씩 배치 */
+            gap: 15px; /* 버튼 사이 간격 */
+            width: 320px;
+        }
+
+        /* 버튼 스타일 */
+        .btn {
+            padding: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #4A90E2;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 마우스 호버(올렸을 때) 효과 */
+        .btn:hover {
+            background-color: #357ABD;
+            transform: translateY(-2px);
+        }
+
+        /* 버튼 클릭했을 때 효과 */
+        .btn:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>버튼을 만들자</h1>
+
+    <div class="button-grid">
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+    </div>
+
+    <script>
+        // 모든 버튼을 가져와서 클릭 이벤트 추가
+        const buttons = document.querySelectorAll('.btn');
+
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                alert(`${index + 1}번 버튼을 누르셨습니다! 😊`);
+            });
+        });
+    </script>
+
+</body>
+</html>
